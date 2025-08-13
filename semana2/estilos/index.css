@@ -1,7 +1,8 @@
 body
 {
     background-color: #232323;
-    font-family: monospace;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
 }
 nav {
             background-color: #2b2b2b;
@@ -33,8 +34,17 @@ nav {
         }
         nav ul li a:hover {
             color: #e0a000;
-            text-decoration: underline;
-            font-size: 120%;
+            
+        }
+
+        nav ul li
+        {
+            transition: all 0.8s ease;
+        }
+
+        nav ul li:hover
+        {
+            transform: scale(1.3);
         }
 
 .header
@@ -55,4 +65,62 @@ nav {
     margin-left: 10px;
     width: 50%;
     padding: 10px;
+}
+
+section
+{
+    display: flex;
+}
+
+.test{
+    background-color: rgb(46, 46, 46);
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 0px 10px 0px black;
+    transition: all 0.8s ease;
+}
+
+.test:hover
+{
+    transform: scale(1.1);    
+    box-shadow: 0px 0px 20px 0px black;
+}
+
+
+.test h2
+{
+     padding-top: 10px;
+}
+
+
+.test button
+{
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #e0a000;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    margin-top: 100px;
+    transition: all 0.8s ease;
+
+}
+
+.test button:hover
+{
+
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px 0px #e0a000;
+}
+
+footer
+{
+    text-align: center;
+  margin-top: 200px;
+  
 }
