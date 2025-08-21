@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDxyMQGRAdYK8XFrAt1tqtorl95VLFFLGMyw&s">
+    <link rel="icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDxyMQGRAdYK8XFrAt1tqtorl95VLFFLGMyw&s">
     <title>FERREXPRESS</title>
     <link rel="stylesheet" href="estilos/index.css">
     <link rel="stylesheet" href="estilos/clientes.css">
 </head>
+
 <body>
     <main></main>
     <div class="header">
-        <img style="border-radius: 5px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDxyMQGRAdYK8XFrAt1tqtorl95VLFFLGMyw&s" alt="">
+        <img style="border-radius: 5px;"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDxyMQGRAdYK8XFrAt1tqtorl95VLFFLGMyw&s" alt="">
         <div>
             <h2>FERREXPRESS</h2>
             <h3>Tienda online</h3>
         </div>
         <h1>REGISTRO DE CLIENTES</h1>
     </div>
+    
     <nav>
         <ul>
             <li><a href="index.html">PRINCIPAL</a></li>
@@ -29,26 +34,60 @@
 
     <div class="formulario_clientes">
         <h2>Registro de clientes</h2>
+        <hr style="width: 95%;">
         <form action="">
-            <div>
-                <label for="nombre">Nombre completo: </label>
-                <br>
-                <input type="text" id="nombre" placeholder="Escribe tu nombre">
-            </div>
-             <br><br>
-            <div>
-                <label for="nombre">Nombre completo: </label>
-                 <label for="nombre">Nombre completo: </label>
-                <br>
-                <input type="text" id="nombre" placeholder="Escribe tu nombre">
-               
-                
-                <input type="text" id="nombre" placeholder="Escribe tu nombre">
-            </div>
-             
 
+            <div class="contenedor">
+                <label for="nombre">Nombre completo: </label>
+                
+                <input class="response" type="text" id="nombre" placeholder="Escribe tu nombre">
+            </div>
+
+
+
+            <div class="contenedor_campos">
+                <div class="campoprueba">
+                    <label for="rut">Identificación: </label>
+                    
+                    <input class="response" type="number" id="rut" placeholder="00000000-0">
+                </div>
+
+                <div class="campoprueba">
+                    <label for="telefono">Teléfono:</label>
+                    
+                    <input class="response" type="number" id="telefono" placeholder="999999999">
+                </div>
+
+            </div>
+
+            <div class="contenedor">
+                <label for="nombre">Correo electrónico: </label>
+                
+                <input class="response" type="text" id="nombre" placeholder="tucorreo@gmail.com">
+            </div>
+            <div class="contenedor">
+                <label for="nombre">Dirección: </label>
+                
+                <input class="response" type="text" id="nombre" placeholder="Avenida siempreviva 333">
+            </div>
+            <div class="contenedor">
+                <label for="tipo_cliente">Tipo de cliente: </label>
+                
+                <select class="response" id="" name="">
+                    <option value="" selected disabled>Seleccione...</option>
+                    <option value="c">Cliente1</option>
+                    <option value="c">Cliente2</option>
+                    <option value="c">Cliente3</option>
+                </select>
+            </div>
+            <br>
+            
+            <div class="contenedor">
+                <center><button class = "boton_registrar">REGISTRAR CLIENTE</button></center>
+            </div>
+            
     </div>
-        
+
     </main>
 
     <footer>
